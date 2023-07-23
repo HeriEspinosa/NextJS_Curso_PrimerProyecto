@@ -1,3 +1,4 @@
+import { FC, PropsWithChildren } from 'react'
 import Head from 'next/head'
 import Navbar from '../Navbar'
 import { Inter } from 'next/font/google'
@@ -5,8 +6,9 @@ import styles from './MainLayout.module.css'
 
 const inter = Inter({ subsets: ['latin'] })
 
-export const MainLayout = ({children}) => {
-  return (
+
+export const MainLayout: FC<PropsWithChildren> = ({children}) => {
+  return (  
     <div className='box-container'>
       <Head>
         <title>Home - Heri Espinosa</title>

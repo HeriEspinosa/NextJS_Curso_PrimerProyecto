@@ -1,8 +1,9 @@
+import { FC } from 'react'
 import Link from 'next/link'
-import { MainLayout } from '@/components/layouts/MainLayout'
+import { MainLayout } from '../components/layouts/MainLayout'
 
 
-const contact = () => {
+const contact: FC = () => {
   return (
     
     <MainLayout>

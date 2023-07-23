@@ -1,9 +1,9 @@
+import { FC } from 'react'
 import Link from 'next/link'
-import { MainLayout } from '@/components/layouts/MainLayout'
-import { DarkLayout } from '@/components/layouts/DarkLayout'
+import { MainLayout } from '../components/layouts/MainLayout'
+import { DarkLayout } from '../components/layouts/DarkLayout'
 
-
-const AboutPage = () => {
+export default function AboutPage() {
   return (
 
     <>
@@ -17,10 +17,7 @@ const AboutPage = () => {
   )
 }
 
-export default AboutPage
-
-AboutPage.getLayout = function getLayout(page) {
-
+AboutPage.getLayout = function getLayout(page:JSX.Element) {  
   return (
     <MainLayout>
       <DarkLayout>

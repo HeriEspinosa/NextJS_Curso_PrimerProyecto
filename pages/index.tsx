@@ -1,8 +1,9 @@
 import Link from 'next/link'
-import { MainLayout } from '@/components/layouts/MainLayout'
+import { MainLayout } from '../components/layouts/MainLayout'
+import { FC } from 'react'
 
 
-export default function Home() {
+export default function Home(){
   return (
     
       
